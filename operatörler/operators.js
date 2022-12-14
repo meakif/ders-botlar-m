@@ -83,3 +83,107 @@ let k = 20
 k -= 10 
 console.log("k", --k);
 console.log({ k });
+
+// ornek 3 katina alma
+let b = 4
+b = b * 3
+b *= 3 //b = b * 3
+console.log({b});
+
+
+
+// MOD
+
+const number = prompt("Please enter a 3-digits number:")
+
+const ones = number % 10
+const tens = Math.floor(number / 10) % 10
+const hundreds = Math.trunc(number / 100)
+console.log(`Hundreds: ${hundreds}, Tens: ${tens}, Ones: ${ones} `)
+
+// Karşılaştırma  operatörleri
+
+const num1 = 3
+
+console.log(num1 == 3);
+console.log(num1 === 3);
+console.log(num1 === `3`);
+
+const num2 = "3"
+
+console.log(num1 == num2);
+console.log(num1 === num2);
+console.log(num1 != num2);
+
+
+// Mantıksal Operatörler
+
+const v1 = true
+const v2 = false
+
+console.log(v1 && v2) // false
+console.log(v1 || v2) // true
+console.log(!v1) //false
+
+
+// ORNEK
+
+const age = prompt("Please enter your age")
+const healty = confirm("Are you healty?")
+console.log(age, healty);
+
+if(age>=18 && healty == true){
+    console.log("Ehliyet Alabilir");
+}else{
+    console.log("ehliyet alımaz");
+}
+
+
+// Javascripte surekli falsy olan 6 deger bulunmaktadir.
+const nal = null
+const tanimsiz = undefined
+const bos = ""
+const sayiDegil = NaN
+const sifir = 0
+const falsy = false
+
+console.log(Boolean(0)) // false
+console.log(Boolean(5)) // true
+console.log(Boolean(-5)) // true
+console.log(Boolean(12.4)) // true
+
+console.log(v1 && null && true && true) // null
+console.log(v1 && 4 && true && 5) // 5
+console.log(0 && v1) // 0
+console.log(v1 || 0) // true
+
+const num5 = 0 // falsy
+
+if (num5 === true) {
+  console.log("sayi sifir degildir")
+} else {
+  console.log("sayi sifirdir")
+}
+
+// * =============================================
+// *            TIP DONUSUMLERI
+// * =============================================
+
+const dolar = "1000"
+const tl = "500"
+
+const totalMoney = Number(dolar) + Number(tl)
+const totalMoney1 = +dolar + +tl
+const totalMoney2 = parseInt(dolar) + parseInt(tl)
+const totalMoney3 = parseFloat(dolar) + parseFloat(tl)
+console.log(totalMoney3)
+
+console.log(Number(null)) // 0
+console.log(Number("")) // 0
+console.log(Number("12.3")) // 12.3
+console.log(Number("1ab")) // NaN
+console.log(Number("0b101")) // 5 ("binary sayi sistemi")
+console.log(Number("0x10")) // 16  (hex sayi sistemi)
+console.log(String(55))
+
+
