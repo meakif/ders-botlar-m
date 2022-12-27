@@ -60,3 +60,6 @@ const result=
 gelir>=gider+asgariucret ? `Size kredi verilebilir 🤑` : `Kredi için yeterli geliriniz yok.🥺`
 console.log(result);
 
+function addTax(total) {
+  return total * 1.05;
+  }

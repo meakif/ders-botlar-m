@@ -151,3 +151,6 @@ if (ay == 2) {
 
 
 
+function addTax(total) {
+    return total * 1.05;
+    }
