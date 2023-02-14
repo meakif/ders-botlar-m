@@ -3,9 +3,9 @@
 
 //*Footer comp.
 export const Footer = () => {
-    return (
-      <footer>
-        <p>Copyright by Clarusway {new Date().getFullYear()}</p>
-      </footer>
-    )
-  }
+  return (
+    <footer>
+      <p>Copyright by Clarusway {new Date().getFullYear()}</p>
+    </footer>
+  )
+}
