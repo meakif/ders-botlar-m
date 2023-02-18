@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #BAE3F6;
+}
+.App > h1{
+text-align: center;
+padding: 2rem;
+}
